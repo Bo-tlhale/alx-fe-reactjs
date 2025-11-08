@@ -10,14 +10,17 @@ import Footer from './components/Footer';
 
 import UserProfile from './components/UserProfile';
 
+import Counter from './components/Counter'
+
 function App() {
 
   return (
     <>
-      <Header />
+      {/*<Header />
       <MainContent />
       <UserProfile name="Alice" age="25" bio="Loves hiking and photography"/>
-      <Footer />
+      <Footer />*/}
+      <Counter />
       
     </>
   )
