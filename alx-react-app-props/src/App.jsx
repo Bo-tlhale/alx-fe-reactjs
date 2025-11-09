@@ -10,11 +10,15 @@ import Footer from './components/Footer';
 
 import UserProfile from './components/UserProfile';
 
+import UserContext from './components/UserContext'
+
 function App() {
 
   return (
     <>
-      <UserProfile name="Alice" age="25" bio="Loves hiking and photography"/>
+      <UserContext.Provider value={userData}>
+        <UserProfile name="Alice" age="25" bio="Loves hiking and photography"/>
+      </UserContext.Provider>
     </>
   )
 }
